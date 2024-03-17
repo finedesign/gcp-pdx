@@ -9,11 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
           // First, close all menus
           document.querySelectorAll('.secondary-menu').forEach(menu => {
               menu.classList.remove('expanded');
+              console.log('Menu collapsed');
           });
 
           // Then, if the current menu was not already expanded, expand it
           if (!isExpanded) {
               currentMenu.classList.add('expanded');
+              console.log('Menu expanded')
           }
       });
   });

@@ -10,6 +10,15 @@ body {
   padding: 20px;
 }
 
+.card-nav {
+  margin-bottom: 30px;
+  font-size: smaller;
+}
+
+.card-nav a {
+  text-decoration: none;
+}
+
 .primary-menu, .secondary-menu {
   list-style: none;
   padding: 0;
@@ -38,17 +47,9 @@ p {
 }
 
 .secondary-menu {
-  visibility: hidden; /* Hide the menu */
-  opacity: 0; /* Make it fully transparent */
-  max-height: 0;
-  overflow: hidden;
-  transition: visibility 0s, opacity 0.3s linear, max-height 0.3s ease-out;
-  transition-delay: 0.3s; /* Apply delay for visibility to sync with opacity */
+  display: none;
 }
 
 .expanded {
-  visibility: visible; /* Make the menu visible */
-  opacity: 1; /* Fully opaque */
-  max-height: 500px; /* Adjust based on your content's needs */
-  transition-delay: 0s; /* No delay for expanding */
+  display: block;
 }
