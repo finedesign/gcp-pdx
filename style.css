@@ -77,6 +77,14 @@ p {
   text-decoration: none;
 }
 
+.warning {
+  padding: 16px;
+  background-color: #F8D7DA;
+  color: #9B0B19;
+  margin-top: 30px;
+  font-size: .9em;
+  text-decoration: none;
+}
 
 
 
