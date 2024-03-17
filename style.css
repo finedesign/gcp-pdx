@@ -47,6 +47,17 @@ body {
   text-align: left;
 }
 
+.menu-button-direct {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  padding-top: 20px;
+}
+
+
 h2 {
   font-size: 1.5em;
 }
