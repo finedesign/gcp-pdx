@@ -9,6 +9,7 @@
 <body>
     <div class="card">
       <div class="card-nav"><a href="../">< BACK</a></div>
+      <button onclick="playAudio()">Zanana</button>
         <h2>A Prayer for the Palestinian People</h2>
         <p>In the name of Elohim, the most merciful. May the Palestinian people receive the healing powers of our prayers. May they be granted safety, success, love, security, and hope. May they enjoy the fruits of freedom and equality that they—and all human beings—deserve. <br> <br>
 
@@ -31,5 +32,22 @@
 
     </div>
     <script src="script.js"></script>
+    <script>
+      // Replace 'your_audio_file.mp3' with the path to your actual MP3 file
+      var audio = new Audio('../zanana_mixdown.mp3');
+      
+      // Loop the audio
+      audio.loop = true;
+      
+      function playAudio() {
+        // Play or pause the audio depending on its current state
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.currentTime = 0; // Optionally reset the audio to the start if you want to stop and reset it instead of pausing
+        }
+      }
+      </script>
 </body>
 </html>

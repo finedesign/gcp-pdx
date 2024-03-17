@@ -9,6 +9,7 @@
 <body>
     <div class="card">
       <div class="card-nav"><a href="../">< BACK</a></div>
+      <button onclick="playAudio()">Zanana</button>
         <h2>GCP - A Via Dolorosa of Solidarity</h2>
         <h3>The Way of the Cross / Walking in God&rsquo;s Nonviolent-Resurrection-Power</h3>
         <h4>Each Day: Set Your Intention</h4>
@@ -64,5 +65,23 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      // Replace 'your_audio_file.mp3' with the path to your actual MP3 file
+      var audio = new Audio('../zanana_mixdown.mp3');
+      
+      // Loop the audio
+      audio.loop = true;
+      
+      function playAudio() {
+        // Play or pause the audio depending on its current state
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.currentTime = 0; // Optionally reset the audio to the start if you want to stop and reset it instead of pausing
+        }
+      }
+      </script>
+
 </body>
 </html>

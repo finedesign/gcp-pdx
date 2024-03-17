@@ -9,6 +9,7 @@
 <body>
     <div class="card">
       <div class="card-nav"><a href="../">< BACK</a></div>
+      <button onclick="playAudio()">Zanana</button>
         <h2>A Liturgy for Palestine</h2>
         <p>E te Atua, God of truth,<br> 
 Let us not hide behind sterilised language and empty statements,<br> 
@@ -187,5 +188,22 @@ That we stood for justice and peace, not just in word but in action.
 
 
     <script src="script.js"></script>
+    <script>
+      // Replace 'your_audio_file.mp3' with the path to your actual MP3 file
+      var audio = new Audio('../zanana_mixdown.mp3');
+      
+      // Loop the audio
+      audio.loop = true;
+      
+      function playAudio() {
+        // Play or pause the audio depending on its current state
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.currentTime = 0; // Optionally reset the audio to the start if you want to stop and reset it instead of pausing
+        }
+      }
+      </script>
 </body>
 </html>

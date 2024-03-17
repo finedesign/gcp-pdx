@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple MP3 Player</title>
+</head>
+<body>
+
+<button onclick="playAudio()">Zanana</button>
+
+<script>
+// Replace 'your_audio_file.mp3' with the path to your actual MP3 file
+var audio = new Audio('zanana_mixdown.mp3');
+
+// Loop the audio
+audio.loop = true;
+
+function playAudio() {
+  // Play or pause the audio depending on its current state
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+    audio.currentTime = 0; // Optionally reset the audio to the start if you want to stop and reset it instead of pausing
+  }
+}
+</script>
+
+</body>
+</html>
