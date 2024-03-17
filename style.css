@@ -29,6 +29,11 @@ body {
   padding-left: 20px;
 }
 
+.secondary-menu li {
+  padding-bottom: 10px;
+}
+
+
 .menu-button {
   background: none;
   border: none;
