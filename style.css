@@ -19,6 +19,10 @@ body {
   text-decoration: none;
 }
 
+.card p {
+  line-height: 1.4em;
+}
+
 .primary-menu, .secondary-menu {
   list-style: none;
   padding: 0;
@@ -51,6 +55,21 @@ p {
   font-size: 1.2em;
 }
 
+.credits {
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.article-links {
+  margin-top: 30px;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+
+
+
+
 .secondary-menu {
   display: none;
 }
@@ -58,3 +77,4 @@ p {
 .expanded {
   display: block;
 }
+
