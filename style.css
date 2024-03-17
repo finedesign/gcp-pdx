@@ -1,38 +1,54 @@
 body {
+  background-color: #f0f0f0;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
+}
+
+.card, .menu-card {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin: 20px;
   padding: 20px;
-  max-width: 800px;
-  margin: auto;
-  font-size: larger;
 }
 
-.toc {
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.toc h1, .toc h2 {
-  color: #444;
-}
-
-.toc ul {
-  list-style-type: none;
+.primary-menu, .secondary-menu {
+  list-style: none;
   padding: 0;
 }
 
-.toc ul li {
-  padding: 8px 0;
+.secondary-menu {
+  display: none;
+  padding-left: 20px;
 }
 
-.toc ul li a {
-  text-decoration: none;
-  color: #007bff;
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
 }
 
-.toc ul li a:hover {
-  text-decoration: underline;
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.secondary-menu {
+  visibility: hidden; /* Hide the menu */
+  opacity: 0; /* Make it fully transparent */
+  max-height: 0;
+  overflow: hidden;
+  transition: visibility 0s, opacity 0.3s linear, max-height 0.3s ease-out;
+  transition-delay: 0.3s; /* Apply delay for visibility to sync with opacity */
+}
+
+.expanded {
+  visibility: visible; /* Make the menu visible */
+  opacity: 1; /* Fully opaque */
+  max-height: 500px; /* Adjust based on your content's needs */
+  transition-delay: 0s; /* No delay for expanding */
 }
