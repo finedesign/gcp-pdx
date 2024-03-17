@@ -90,6 +90,17 @@ p {
   text-decoration: none;
 }
 
+.section{
+  display: block;
+  margin: 0, auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
 
 
 
